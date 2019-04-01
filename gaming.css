@@ -1,0 +1,244 @@
+
+html {
+	overflow-x: hidden;
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: minmax(200px, auto);
+	background-color: #8a9190;
+	width: 100%;
+}
+
+.centerwrap {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner {
+	background-image: url("jdsnes26.png");
+	display: inline-block;
+	background-position: center;
+	padding: 30px;
+	background-repeat: no-repeat;
+	
+}
+
+.background {
+	position: relative;
+	background-image: linear-gradient(to right, #00807b, #3808c9);
+	width: 100vw;
+}
+
+h1 {
+	background-color: rgba(153, 177, 216, 0.7);
+	text-align: center;
+ 	font-family: 'Press Start 2P', cursive;
+ 	font-size: 20px;
+ 	color: #101011;
+ 	position: relative; 
+ 	background-position: center;
+ 	padding: 15px;
+ 	bottom: 40px;
+ 	width: 80vw;
+}
+
+ul li{
+	list-style: none;
+	padding: 5px;
+	border: 2px gray solid;
+	border-radius: 15px;
+	background: linear-gradient(to right, #536362 ,#485366);
+	margin: 3px;
+	flex: 1;
+}
+.navi {
+	display: none;
+}
+
+.navi ul{
+	position: relative;
+	right: 15px;
+}
+
+li:hover {
+	background: #161919;
+	color: #d4e2f9;
+}
+
+li a:visited:hover {
+	color: #d4e2f9;
+}
+
+
+li a:visited {
+	color: #d4e2f9;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+}
+
+p{
+	margin: 10px;
+}
+
+footer{
+	padding-left: 10px;
+	background-color: #485366;
+	height: 20px;
+	color: white;
+	width:100%;	
+}
+
+img {
+	position: relative;
+	width: 50%;
+	margin: 10px;
+	padding: 5px;
+	border: 2px gray solid;
+	background-color: #8f939b;
+}
+
+.games-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 95vw;
+}
+
+section {
+	border: 2px gray solid;
+	border-radius: 15px;
+	margin: 10px;
+	background-color: #9DADC7;
+}
+
+
+.navi ul {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.flex-wrap { /* add the following code to make images align left to right */
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.flex-wrap img {
+	flex: 1;
+	width: 15%;
+	align-self: flex-end;
+
+} /* all the way to here */
+section h3 {
+	margin: 5px;
+}
+.figure {
+	display: inline-block;
+	float: right;
+	width: 30%;
+	overflow: hidden;
+}
+.figure img {
+	width: 90%;
+
+}
+figcaption {
+	float: right;
+	clear: right;
+	text-align: right;
+	width: 70%;
+	padding-bottom: 10px;
+	font-weight: bold;
+	margin: 0px 30px;
+}
+button img {
+	width: 20px;
+	border: none;
+	background-color: #8a9190;
+	position: relative;
+	top: 20px;
+	left: 10px; 
+}
+button {
+	display: inline-block;
+	background-color: #8a9190;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	padding: 0px;
+}
+
+@media (min-width: 600px) {
+.navi {
+	display: block;
+}
+
+.banner {
+	position: relative;
+	left: 30px;
+}
+
+body {
+grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.main-wrap {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+
+footer{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.banner{
+	background-position: center;
+}
+
+.sega{
+	width: 30%;
+}
+
+.games-grid{
+	grid-template-columns: repeat(3, 1fr);
+	grid-column: 1 / 4;
+	justify-content: space-around;
+	position: relative;
+	margin: 0 auto;
+}
+
+.secgrid {
+	display: grid;
+	grid-template-rows: 2fr, 1fr;
+}
+section img {
+	justify-self: center;
+}
+div img:hover {
+	transform:scale(1.5);
+}
+
+}
