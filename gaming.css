@@ -90,7 +90,9 @@ a{
 }
 
 p{
-	margin: 10px;
+	margin: 10px 5%;
+    position: relative;
+    font-size: 1.3em;
 }
 
 footer{
@@ -108,6 +110,40 @@ img {
 	padding: 5px;
 	border: 2px gray solid;
 	background-color: #8f939b;
+}
+
+.tooltip
+{
+  text-decoration: none;
+  position: relative;
+  display: inline;
+}
+ 
+ 
+.tooltip span { /* in order to place an image a container is needed to hold the image like this span*/
+  display: none;
+  border-radius: 6px;
+  color: black;
+  background: white; 
+}
+ 
+.tooltip span img {
+    float: left;
+    width: auto;
+    margin: 0 auto;
+}
+ 
+ 
+.tooltip:hover span {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 30%;
+  z-index: 1000;
+  max-width: 230px;
+  border: 1px solid black;
+  overflow: hidden;
+  padding: 8px;
 }
 
 .games-grid {
@@ -185,7 +221,42 @@ button {
 	padding: 0px;
 }
 
+.imgcaption{
+    position: relative;
+    float: left;
+    clear: left;
+    padding:0 10px 0px 10px;
+    bottom: 10px;
+    max-width: 53%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.btm-img-caption{
+    position: relative;
+    float: right;
+    clear: right;
+    padding: 0 10px 15px 10px;
+    font-weight: bold;
+    max-width: 50%;
+}
+/* Media Queries*/
 @media (min-width: 600px) {
+.btm-img-caption {
+    max-width: 30%;
+}
+    .banner{
+        background-image: url("gamebanner.jpg");
+        background-size: 100% auto;
+    }
+    .mypicture{
+        width: 20%;
+    }
+    
+.imgcaption{
+    max-width: 50%;
+    }
+    
 .navi {
 	display: block;
 }
