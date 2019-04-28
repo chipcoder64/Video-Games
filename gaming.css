@@ -92,7 +92,7 @@ a{
 p{
 	margin: 10px 5%;
     position: relative;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 footer{
@@ -317,5 +317,8 @@ div img:hover {
 }
     img{
         margin: 15px 2% 15px 2%;
+    }
+	 p{
+        font-size: 1.9vw;
     }
     }
