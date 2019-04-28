@@ -255,6 +255,7 @@ button {
     
 .imgcaption{
     max-width: 50%;
+    margin: auto 2% auto 2%;
     }
     
 .navi {
@@ -291,8 +292,10 @@ footer{
 
 .sega{
 	width: 30%;
-	margin-right: 40px;
 }
+    .consolewars{
+        margin-left: 30px;
+    }
 
 .games-grid{
 	grid-template-columns: repeat(3, 1fr);
@@ -312,5 +315,7 @@ section img {
 div img:hover {
 	transform:scale(1.5);
 }
-
-}
+    img{
+        margin: 15px 2% 15px 2%;
+    }
+    }
