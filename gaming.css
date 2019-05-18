@@ -98,9 +98,14 @@ p{
 footer{
 	padding-left: 10px;
 	background-color: #485366;
-	height: 20px;
+	height: 40px;
 	color: white;
 	width:100%;	
+}
+
+.counter{
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 img {
