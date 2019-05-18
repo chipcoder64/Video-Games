@@ -7,16 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 		<link href="gaming.css" rel="stylesheet">
-		<script type="text/javascript">
-			function myFunction() {
-		var x = document.getElementById("navi");
-		if (x.style.display === "none") {
-			x.style.display = "block";
-		} else {
-			x.style.display = "none";
-		}
-	}	
-		</script>
+		
 	</head>
 	<body>
 		<header>
@@ -26,7 +17,7 @@
 			</div>
 		</div>
 				<nav>
-					<button class="menu" onclick="myFunction()"><img src="menu.png">Menu</button>
+					<button class="button" id="hide-menu"><img src="menu.png">Menu</button>
 					<div class="navi" id="navi">
 						<ul>
 							<li><a href="nintendopg.html">Nintendo</a></li>
@@ -177,5 +168,16 @@
 			No copyright intended credit goes to <cite>Wikipedia</cite>.
 
 		</footer>
+		<script type="text/javascript">
+			document.querySelector("#hide-menu").onclick = function() {
+		let hideMenu = document.querySelector("#navi");
+		if (hideMenu.style.display === "none") {
+			hideMenu.style.display = "block";
+		} else {
+			hideMenu.style.display = "none";
+		}
+	}	
+		</script>
+		
 	</body>
 	</html>
