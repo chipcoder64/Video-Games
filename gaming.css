@@ -224,6 +224,7 @@ button {
 	position: relative;
 	overflow: hidden;
 	padding: 0px;
+	outline: none;
 }
 
 .imgcaption{
