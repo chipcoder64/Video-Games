@@ -5,7 +5,9 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr;
 	grid-template-columns: 1fr;
 	grid-auto-rows: minmax(200px, auto);
 	background-color: #8a9190;
@@ -21,7 +23,9 @@ body {
 	position: absolute;
 	top: 50%;
 	bottom: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .banner {
@@ -35,6 +39,9 @@ body {
 
 .background {
 	position: relative;
+	background-image: -webkit-gradient(linear, left top, right top, from(#00807b), to(#3808c9));
+	background-image: -webkit-linear-gradient(left, #00807b, #3808c9);
+	background-image: -o-linear-gradient(left, #00807b, #3808c9);
 	background-image: linear-gradient(to right, #00807b, #3808c9);
 	width: 100vw;
 }
@@ -57,9 +64,14 @@ ul li{
 	padding: 5px;
 	border: 2px gray solid;
 	border-radius: 15px;
+	background: -webkit-gradient(linear, left top, right top, from(#536362) ,to(#485366));
+	background: -webkit-linear-gradient(left, #536362 ,#485366);
+	background: -o-linear-gradient(left, #536362 ,#485366);
 	background: linear-gradient(to right, #536362 ,#485366);
 	margin: 3px;
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 .navi {
 	display: none;
@@ -152,7 +164,9 @@ img {
 }
 
 .games-grid {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr;
 	grid-template-columns: 1fr;
 	width: 95vw;
 }
@@ -166,25 +180,42 @@ section {
 
 
 .navi ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	text-align: center;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .flex-wrap { /* add the following code to make images align left to right */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	align-items: flex-end;
 	justify-content: center;
 }
 
 .flex-wrap img {
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	width: 15%;
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 
 } /* all the way to here */
 section h3 {
@@ -274,21 +305,28 @@ button {
 }
 
 body {
+-ms-grid-columns: (1fr)[3];
 grid-template-columns: repeat(3, 1fr);
 }
 
 header {
-	grid-column-start: 1;
+	-ms-grid-column: 1;
+	    grid-column-start: 1;
+	-ms-grid-column-span: 3;
 	grid-column-end: 4;
 }
 .main-wrap {
-	grid-column-start: 1;
+	-ms-grid-column: 1;
+	    grid-column-start: 1;
+	-ms-grid-column-span: 3;
 	grid-column-end: 4;
 }
 
 
 footer{
-	grid-column-start: 1;
+	-ms-grid-column: 1;
+	    grid-column-start: 1;
+	-ms-grid-column-span: 3;
 	grid-column-end: 4;
 }
 
@@ -304,22 +342,31 @@ footer{
     }
 
 .games-grid{
+	-ms-grid-columns: (1fr)[3];
 	grid-template-columns: repeat(3, 1fr);
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
 	grid-column: 1 / 4;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	position: relative;
 	margin: 0 auto;
 }
 
 .secgrid {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-rows: 2fr, 1fr;
 	grid-template-rows: 2fr, 1fr;
 }
 section img {
-	justify-self: center;
+	-ms-grid-column-align: center;
+	    justify-self: center;
 }
 div img:hover {
-	transform:scale(1.5);
+	-webkit-transform:scale(1.5);
+	    -ms-transform:scale(1.5);
+	        transform:scale(1.5);
 }
     img{
         margin: 15px 2% 15px 2%;
